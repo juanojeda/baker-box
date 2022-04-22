@@ -1,6 +1,10 @@
+import { styled } from "@linaria/react";
+
+const Background = styled.div``;
+
 function App() {
   return (
-    <div className="App">
+    <Background className="App">
       <header className="App-header">
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -14,7 +18,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </Background>
   );
 }
 
