@@ -6,6 +6,7 @@ An app that helps bakers write and save recipes, weights and percentages.
 
 ## What is it built with?
 
+- [Typescript](https://www.typescriptlang.org/) - Strongly-typed programming language built on Javascript
 - [React](https://reactjs.org/) - UI component library
 - [Create React App](https://github.com/facebook/create-react-app). - UI infrastructure
 - [Craco](https://github.com/gsoft-inc/craco) - Easy, ejection-free config for CRA ^
