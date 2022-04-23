@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import RecipeList from "./RecipeList";
 import reportWebVitals from "./reportWebVitals";
 
 const DOMRoot = document.getElementById("root");
@@ -9,7 +9,7 @@ if (DOMRoot) {
   const root = ReactDOM.createRoot(DOMRoot);
   root.render(
     <React.StrictMode>
-      <App />
+      <RecipeList />
     </React.StrictMode>
   );
 }
