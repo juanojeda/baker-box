@@ -51,7 +51,15 @@ enum Palette {
   inverseOnSurfaceDark = "#201a17"
 }
 
-interface Theme {
+export interface FontStyle {
+  font: string;
+  fontWeight: string;
+  fontSize: string;
+  lineHeight: string;
+  letterSpacing: string;
+}
+
+export interface Theme {
   colors: {
     light: {
       [colorKey: string]: Palette;
@@ -62,13 +70,7 @@ interface Theme {
   };
   spacing: {};
   typography: {
-    [fontKey: string]: {
-      font: string;
-      fontWeight: string;
-      fontSize: string;
-      lineHeight: string;
-      letterSpacing: string;
-    };
+    [fontKey: string]: FontStyle;
   };
 }
 
@@ -245,3 +247,5 @@ export const theme: Theme = {
     }
   }
 };
+
+export type FontStyleName = keyof typeof theme.typography;
