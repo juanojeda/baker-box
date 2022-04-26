@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import RecipeList from "./RecipeList";
+import { Layout } from "./components/Layout";
 import reportWebVitals from "./reportWebVitals";
 
 const DOMRoot = document.getElementById("root");
@@ -9,7 +10,9 @@ if (DOMRoot) {
   const root = ReactDOM.createRoot(DOMRoot);
   root.render(
     <React.StrictMode>
-      <RecipeList />
+      <Layout>
+        <RecipeList />
+      </Layout>
     </React.StrictMode>
   );
 }

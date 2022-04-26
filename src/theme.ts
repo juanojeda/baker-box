@@ -18,7 +18,7 @@ enum Palette {
   outlineLight = "#847469",
   backgroundLight = "#fcfcfc",
   onBackgroundLight = "#201a17",
-  surfaceLight = "#fcfcfc",
+  surfaceLight = "#f7f3ef",
   onSurfaceLight = "#201a17",
   surfaceVariantLight = "#f3dfd2",
   onSurfaceVariantLight = "#51443b",
@@ -68,7 +68,11 @@ export interface Theme {
       [colorKey: string]: Palette;
     };
   };
-  spacing: {};
+  spacing: {
+    gridSize: number;
+    minUnit: number;
+    maxUnit: number;
+  };
   typography: {
     [fontKey: string]: FontStyle;
   };
@@ -131,7 +135,11 @@ export const theme: Theme = {
       inverseOnSurface: Palette.inverseOnSurfaceDark
     }
   },
-  spacing: {},
+  spacing: {
+    minUnit: 0.5,
+    gridSize: 16,
+    maxUnit: 4
+  },
   typography: {
     display1: {
       font: "Roboto",
@@ -249,3 +257,13 @@ export const theme: Theme = {
 };
 
 export type FontStyleName = keyof typeof theme.typography;
+
+export const getSpacing = (units: number, { spacing }: Theme): string => {
+  if (units > spacing.maxUnit || units < spacing.minUnit) {
+    throw new Error(
+      `Spacing error: spacing must be between minUnit and maxUnit (${spacing.minUnit}, ${spacing.maxUnit})`
+    );
+  }
+
+  return `${units * spacing.gridSize}px`;
+};

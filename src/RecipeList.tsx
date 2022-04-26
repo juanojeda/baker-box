@@ -1,4 +1,4 @@
-import { styled } from "@linaria/react";
+import { Link } from "./components/Link";
 import { Text } from "./components/Text";
 
 const recipes: Recipe[] = [
@@ -25,7 +25,12 @@ const recipes: Recipe[] = [
 const RecipeList = () => {
   return (
     <div>
-      {recipes.map(({ id, name }) => <div key={id}><Text fontStyle="subhead1" as="a">{name}</Text></div>)}
+      <Text fontStyle="headline3" as="h1">Your recipes</Text>
+      {recipes.map(({ id, name }) => <div key={id}>
+        <Link to={`#${id}`} title={name}>
+          <Text fontStyle="subhead1" as="span">{name}</Text>
+        </Link>
+      </div>)}
     </div>
   );
 }
