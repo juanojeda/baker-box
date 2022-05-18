@@ -28,7 +28,7 @@ const RecipeList = () => {
     <div>
       <Text fontStyle="headline3" as="h1">Your recipes</Text>
       {recipes.map(({ id, name }) => <div key={id}>
-        <Link to={`#${id}`} title={name}>
+        <Link to={`recipe/${id}`} title={name}>
           <Text fontStyle="subhead1" as="span">{name}</Text>
         </Link>
       </div>)}
