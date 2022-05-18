@@ -1,5 +1,6 @@
-import { Link } from "./components/Link";
-import { Text } from "./components/Text";
+import { Recipe } from "../../types";
+import { Link } from "../../components/Link";
+import { Text } from "../../components/Text";
 
 const recipes: Recipe[] = [
   {

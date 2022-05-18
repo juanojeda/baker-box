@@ -1,6 +1,6 @@
-import { styled } from "@linaria/react";
+import { styled } from "linaria/react";
 import * as React from "react";
-import { theme } from "../theme";
+import { theme } from "../utils/theme";
 
 interface LinkProps {
   children: React.ReactNode;

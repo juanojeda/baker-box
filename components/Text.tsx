@@ -1,6 +1,6 @@
 import * as React from "react";
-import { styled } from "@linaria/react";
-import { FontStyleName, FontStyle, theme, getSpacing } from "../theme";
+import { styled } from "linaria/react";
+import { FontStyleName, FontStyle, theme, getSpacing } from "../utils/theme";
 
 interface TextProps {
   children: React.ReactNode;

@@ -1,7 +1,7 @@
-import { css } from "@linaria/core";
-import { styled } from "@linaria/react";
+import { css } from "linaria";
+import { styled } from "linaria/react";
 import * as React from "react";
-import { getSpacing, theme } from "../theme";
+import { getSpacing, theme } from "../utils/theme";
 
 export const globals = css`
   :global() {
