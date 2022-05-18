@@ -1,25 +1,41 @@
-# Example app with [linaria](https://linaria.dev/)
+# Baker Box
 
-This example features how to use [linaria](https://linaria.dev/) as the styling solution instead of [styled-jsx](https://github.com/vercel/styled-jsx).
+## What is this?
 
-We are creating three `div` elements with custom styles being shared across the elements. The styles includes the use of pseudo-selector and CSS animations.
+An app that helps bakers write and save recipes, weights and percentages.
 
-## Deploy your own
+## What is it built with?
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-linaria)
+- [Typescript](https://www.typescriptlang.org/) - Strongly-typed programming language built on Javascript
+- [React](https://reactjs.org/) - UI component library
+- [Create React App](https://github.com/facebook/create-react-app). - UI infrastructure
+- [Craco](https://github.com/gsoft-inc/craco) - Easy, ejection-free config for CRA ^
+- [Linaria](https://github.com/callstack/linaria) - Zero-runtime css-in-js library
+- [Polished](https://polished.js.org/) - utilities for css-in-js
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-linaria&project-name=with-linaria&repository-name=with-linaria)
 
-## How to use
+## Available Scripts
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+In the project directory, you can run:
 
-```bash
-npx create-next-app --example with-linaria with-linaria-app
-# or
-yarn create next-app --example with-linaria with-linaria-app
-# or
-pnpm create next-app -- --example with-linaria with-linaria-app
-```
+### `npm start`
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
