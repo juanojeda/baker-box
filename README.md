@@ -8,8 +8,7 @@ An app that helps bakers write and save recipes, weights and percentages.
 
 - [Typescript](https://www.typescriptlang.org/) - Strongly-typed programming language built on Javascript
 - [React](https://reactjs.org/) - UI component library
-- [Create React App](https://github.com/facebook/create-react-app). - UI infrastructure
-- [Craco](https://github.com/gsoft-inc/craco) - Easy, ejection-free config for CRA ^
+- [Next JS](https://nextjs.org/). - UI infrastructure, routing, SSR
 - [Linaria](https://github.com/callstack/linaria) - Zero-runtime css-in-js library
 - [Polished](https://polished.js.org/) - utilities for css-in-js
 
@@ -18,7 +17,7 @@ An app that helps bakers write and save recipes, weights and percentages.
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -26,12 +25,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### `yarn start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the app in production mode, running with optimised settings.
+To run this, you'll first need to run [`yarn build`](#yarn-build)
 
-### `npm run build`
+### `yarn build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -39,3 +38,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+### `yarn typecheck`
+
+Runs Typescript compiler to validate that the types within the codebase are valied and type safe.
