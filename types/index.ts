@@ -5,14 +5,19 @@ export interface Ingredient {
   isFlour: boolean;
   isWater: boolean;
 }
-
 type WeightInGrams = number;
+
+export interface IngredientWithQty {
+  ingredient: Ingredient;
+  weight: WeightInGrams;
+}
+
 type Note = string;
 
 export interface Recipe {
   id: string;
   name: string;
-  ingredients: [Ingredient, WeightInGrams][];
+  ingredients: IngredientWithQty[];
   notes: Note[];
 }
 
